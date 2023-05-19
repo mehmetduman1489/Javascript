@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var name = "Ali";
+      var sehir = "İstanbul";
+      console.log("Merhaba " + name + " Nasılsın");
+      console.log(`Merhaba ${name} Nasılsın. ${sehir} şehrinde havalar nası?`);
+
+      //Eskiden multi line metin hazırlanırdı. fakat artık kullanılmıyor.   ` ` bu işaret arasına alınan işlem ile atama yapılıyor.
+      var kod = `
+      x=12;
+      y=15;
+      `;
+
+      let z = 3;
+      let a = z++; //önce atama yapar sonra artırır a 3 olur ve z bir artar 4 olur
+      let b = ++z; //önce bir artırır z 5 olur sonra b ye atar
+      console.log(z);
+
+      const sayi = 4;
+      let k = sayi++; //const sabit oldugu icin hata verir
+      console.log(k);
+    </script>
+  </body>
+</html>
