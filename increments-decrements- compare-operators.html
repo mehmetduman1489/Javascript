@@ -18,7 +18,17 @@
       const compration2 = x == z; //true
       console.log(compration2);
       const compration3 = x === z; //false
-      console.log(compration2);
+      console.log(
+        compration2
+      ); /*=== ve !== hem veriyi hem data tipini kontrol eder, == ve != ise sadece veriyi konrol eder. 30 ve "30" karşılaşmasında == tru === false olur*/
+
+      const s1 = 5;
+      console.log(s1 > 5);
+      console.log(s1 < 5);
+      console.log(s1 < "5");
+      console.log(
+        s1 >= 6
+      ); /* Büyük eşit ve küçük eşit kontrollerinde data tipi kontrolü yoktur  */
     </script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p class="desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+      quisquam, aperiam <b>optio dolores</b> minima perspiciatis quam delectus
+      nam nihil hic ex veritatis, incidunt quos magni voluptate iure tempore?
+      Enim, praesentium.
+    </p>
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <script>
+      const elH1 = document.querySelector("h1");
+      console.log(elH1);
+      elH1.innerText = "Hello JS"; // bir elementin içindeki yazıyı okumak ve değiştirmek için
+      elH1.innerText = "Hello <em>Javascript</em>"; //<em> tagı italik yapar. fakat bu şekilde string oldugu gibi değişir. italik olmaz
+      elH1.innerHTML = "Hello <em>Javascript</em>"; // innerHTML ile gönderdiğimiz bu srting yazıyı italik yapar
+
+      const elHome = document.querySelector(".menu li:first-child");
+      console.log(elHome);
+      elHome.innerText = "Ana Sayfa";
+
+      const allH1 = document.querySelectorAll("h1");
+      console.log(allH1);
+
+      const allLi = document.querySelectorAll(".menu li");
+      console.log(allLi);
+
+      const elDesc = document.querySelector(".desc");
+      console.log(elDesc.innerText);
+      console.log(elDesc.innerHTML);
+    </script>
+  </body>
+</html>

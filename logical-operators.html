@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        and/ve          &&
+        or/veya         ||
+        not/değil        !
+
+        */
+      let x = false;
+      let y = true;
+      let z = true;
+      let m = false;
+
+      const comparation1 = true && null; // ilk false bulursa sonç false olur fakat burda en son ifade null buldugu icin null verir.
+      console.log(comparation1);
+
+      const comparation2 = y && z && 5; // son ifade 5 e kadar true oldu ve en son ifade olan  5 i verdi.
+      console.log(comparation2);
+      //NOT   0, FALSE, NULL, undefined, "" ve NaN disindaki durumlar true kaul edilir.
+      // VEYA işleminde ilk true bulunması yetrlidir eğer true yoksa en sondaki değer döndürülür
+      // ve işleminde ilk False degeri yeter ve o döndürülür.
+
+      s2 = "kuş";
+      s3 = "kedi";
+      console.log(s2 || s3); //kuş
+      console.log(s2 && s3); //kedi
+      s2 = true;
+      s3 = false;
+      console.log(!s2); //false
+      console.log(!s3); //true
+      s3 = null;
+      console.log(!s3); //true
+    </script>
+  </body>
+</html>
